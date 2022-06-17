@@ -1,0 +1,77 @@
+.container{
+    margin: auto;
+   max-width: 1200px;
+    padding: 0 30px;
+    overflow: hidden;
+}
+%btn-shared{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.7s;
+    border: none;
+}
+.bg-light{
+    background: $media-color;
+}
+.bg-dark{
+    background: $dark-color;
+    color: $fair-color;
+}
+.btn{
+  &-main{
+      @extend %btn-shared;
+      color: $dark-color;
+      background-color: $media-color;
+      border-radius: 20px
+  }
+  &-light{
+      @extend %btn-shared;
+      color: $dark-color;
+      background-color: $fair-color;
+  }
+  &-dark{
+      @extend %btn-shared;
+      color: $fair-color;
+      background-color: $dark-color;
+  }
+  &:hover{
+      background-color: $main-color;
+  }
+}
+// button[class^='btn-']:hover,
+// a[class^='btn-']:hover,
+// input[class^='btn-']:hover{
+//     background-color: $main-color;
+// }
+.me{
+    color: $main-color;
+    font-style: italic;
+}
+.lead{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.text-c{
+    text-align: center;
+}
+.py{
+    &-1{padding: 1rem 0;}
+    &-2{padding: 2rem 0;}
+    &-3{padding: 3rem 0;}
+    &-4{padding: 4rem 0;}
+}
+.My{
+    &-1{margin: 1rem 0;}
+    &-2{margin: 2rem 0;}
+    &-3{margin: 3rem 0;}
+    &-4{margin: 4rem 0;}
+}
+.bottom-line{
+    height: 2px;
+    width: 3rem;
+    margin: 0 auto 1rem auto;
+    background: $main-color;
+    display: block;
+}

@@ -1,0 +1,112 @@
+@media(max-width: 850px){
+    #head-home{
+        height: 35rem;
+
+        #navbar{
+            
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1.8rem;
+                
+            ul{
+                li{
+                    margin-right: 10px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    }
+    .head-content{
+        padding-bottom: 20px;
+        h1{
+            font-size: 0.5rem;
+            font-style: italic;
+            line-height: 1rem;
+        }
+    }
+
+
+
+
+
+// // SMART PHONE
+
+@media(max-width: 500px){
+   #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem;
+       ul{
+        //    flex-direction: column;
+
+           li{
+               padding: 10px;
+               margin-right: 5px;
+               a{
+                   
+                   padding: 10px;
+                   padding-bottom: 50px;
+               }
+           }
+       }
+   }
+
+
+#logo{
+    width: 10%;
+     height: 10%
+}
+
+#head{
+
+    &-home{
+        background: $bg-image no-repeat center center/cover;
+        height: 10rem;
+        border-bottom: 3px solid $main-color;
+        color: #fff;
+    
+        #head-content{
+          display: none;
+        }
+    }
+
+    }  
+    
+    #casa-a .spacials,
+   #casa-b .kit,
+   #casa-c .process,
+   #about-c .about-logos,
+   #about-D .about-say,
+   #work-A .items{
+        grid-template-columns: 1fr;
+    }
+    .bottom-line{
+        padding-bottom: 5px;
+    }
+    #contact{
+        &-a{
+        
+            .field-input{
+                grid-template-areas: 
+                'name'
+                'email'
+                 'subject'
+                  'number'
+                 'company'
+                 'message';
+        }
+    }
+
+    #about{
+        &-content{
+            .sect-content{
+                display: block;
+                margin-bottom: .7rem 0;
+            }
+        }
+       
+    }
+    }
+}
